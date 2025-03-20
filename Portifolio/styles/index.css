@@ -8,6 +8,9 @@
 
 /* HEADER - index */
 
+body{
+    background-color: #8f8686;
+}
 .navbar ul{
     display: flex;
     list-style-type: none;
