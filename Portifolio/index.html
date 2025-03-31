@@ -11,14 +11,16 @@
 <body>
 
     <header>
-        <!-- header da página home do projeto -->
+        <!-- bloco header, onde tem a navegação do projeto
+         e bloco de apresentação -->
+         <!-- bloco header do projeto -->
         <div class="header-container">
             <div class="apresentacao">
                 <img src="images/fran.png" alt="fran">
                 <nav class="navbar">
                     <!-- LINKS DE NAVEGAÇÃO -->
                     <ul>
-                        <li><a href="#"> Sobre Mim </a> </li>
+                        <li><a href="sobre.html"> Sobre Mim </a> </li>
                         <li><a href="#"> Atividades </a> </li>
                         <li><a href="#"> Projetos </a></li>
                     </ul>
@@ -27,21 +29,23 @@
         
         </div>
 
+        <!-- bloco de apresentação, onde é mostrado quem desenvolveu o projeto
+         e um pouco sobre -->
         <div class="boas-vindas">
             <section class="descricao">
                 <div class="titulo">
-                    <h1> Meu nome é Francisca Yasmin </h1>
+                    <h1> Francisca Yasmin </h1>
                     <h3> Desenvolvedora </h3>
                 </div>
                 <div class="texto">
-                    <p> Sou uma desenvolvedora que busca crescer cada dia mais, por isso,
+                    <p> Meu nome e Francisca Yasmin e sou uma desenvolvedora que busca crescer cada dia mais, por isso,
                         ao navegar, você poderá verificar as
                         atividades realizadas em aula ao longo do semestre letivo,
                         como um pouco sobre mim e algumas coisas que gosto e onde
                         aprendi o que aprendi.</p>
                 </div>
             </section>
-
+            <!-- imagem do desenvolvedor -->
             <div>
                 <img src="images/franzinha.jpg" alt="">
             </div>
@@ -49,9 +53,54 @@
         </div>
     </header>
 
-    <main>
-        
+    <main class="main-conteiner">
+        <h1> ATIVIDADES </h1>
+        <!-- bloco de cards, onde contem os cards de cada aula feita 
+         e exercicios feitos em sala de aula -->
+        <section class="conteiner-atvd">
+            
+            <!-- PROJETO FIGMA -->
+            <div class="card">
+                <img src="images/figma.jpg" alt="Imagem do card" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Projeto Figma</h3>
+                    <p class="card-text">O projeto de coleta seletiva feito no Figma como o primeiro projeto entregue.</p>
+                    <a href="#" class="card-link">Visualizar projeto</a>
+                </div>
+            </div>
 
+            <!-- EXERCICIOS DA PRIMEIRA AULA -->
+            <div class="card">
+                <img src="#" alt="Imagem do card" class="card-img">
+                <div class="card-body">
+                  <h3 class="card-title">JS - Comandos Básicos </h3>
+                  <p class="card-text">Aula de comandos básicos com o uso do Java Script.</p>
+                  <a href="aula1.html" class="card-link">Visualizar exercícios</a>
+                </div>
+            </div>
+
+            <!-- EXERCICIOS DA SEGUNDA AULA -->
+            <div class="card">
+                <img src="#" alt="Imagem do card" class="card-img">
+                <div class="card-body">
+                  <h3 class="card-title">Array - Algoritmo </h3>
+                  <p class="card-text">Aula que foi mostrado array e listas.</p>
+                  <a href="aula2.html" class="card-link">Visualizar exercícios</a>
+                </div>
+            </div>
+
+             <!-- EXERCICIOS DA SEGUNDA AULA -->
+             <div class="card">
+                <img src="#" alt="Imagem do card" class="card-img">
+                <div class="card-body">
+                  <h3 class="card-title">Funções </h3>
+                  <p class="card-text">Realizado funções em Java Script.</p>
+                  <a href="#" class="card-link">Visualizar exercícios</a>
+                </div>
+            </div>
+
+        </section>
+        
     </main>
 
      
@@ -61,7 +110,7 @@
         <div class="row">
 
             <div class="footer-col">
-                <h4> Politicas </h4>
+                <h4> Paginas </h4>
                 <ul>
                     <li><a href="#"> Sobre Mim</a></li>  
                     <li><a href="#"> Atividades </a></li>  
@@ -70,10 +119,10 @@
             </div>
 
             <div class="footer-col">
-                <h4> </h4>
+                <h4> Informações </h4>
                 <ul>
-                    <p> </p>
-                    <p> </p> 
+                    <p> Programação Web Front-end </p>
+                    <p> Senai Roberto Mange </p> 
                 </ul>
             </div>
 
