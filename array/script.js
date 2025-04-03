@@ -43,7 +43,7 @@ document.write(`${numeros} <p>`)
 /*
 funcao de retorno/funcao callback -> eu interajo com meu array, trato essa informação
 e guardo o resultado  em uma nova variavel (array) 
-MAP -> percorro todo o array, faço alguma coisa com ovalor e guardo na varivel de
+MAP -> percorro todo o array, faço alguma coisa com o valor e guardo na varivel de
 retorno (funcao callack)
 */
 
