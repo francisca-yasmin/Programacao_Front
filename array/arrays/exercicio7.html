@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 7 </title>
+</head>
+<body>
+
+    <h1> Exercicio 7 </h1>
+    <script>
+        let nomes = ['Adrian', 'Gabi', 'Kamis', 'Bruno', 'Leticia', 'Rapha', 'Ana', 'Luana', 'Nicolas', 'Nêssa'];
+        let tentativa = 1;
+        let achado = false;
+
+        while(tentativa <= 5 && !achado) {
+            let pesquisa = prompt("Digite um nome que deseja buscar no Array:");
+
+            let indice = nomes.indexOf(pesquisa); //indexOf -> procura um valor e retorna o indice
+
+            if (indice !== -1) {
+                alert(`${nomes[indice]} encontrado na posição: ${indice}`);
+                achado = true;
+            } else {
+                alert("Nome não encontrado na lista. ");
+                tentativa++;
+            }
+        }
+
+        if (!achado) {
+            document.write(`As tentativas acabaram. tchau! :(`);
+        }
+    </script>
+    
+</body>
+</html>
