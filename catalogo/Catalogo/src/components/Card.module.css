@@ -5,12 +5,26 @@
     overflow: hidden;
     border-radius: 5px;
     transition: transform 0.3s ease;
-    background-color: white;
+    background-color: #FFFF;
+}
+
+.conteiner p{
+    font-family: 'Poppins';
+    font-size: 14px;
+    padding: 10px;
+}
+
+.conteiner h3{
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
 }
 
 figure{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 6000px;
+    display: flex;
+    justify-content: center;
 }

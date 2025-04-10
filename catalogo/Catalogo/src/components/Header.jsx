@@ -6,6 +6,7 @@ export function Header(){
         <>
         <header className={estilos.conteiner}>
             <h1> fran's</h1>
+            <p>A melhor plataforma de Filmes pra você</p>
         </header>
         
         </>
