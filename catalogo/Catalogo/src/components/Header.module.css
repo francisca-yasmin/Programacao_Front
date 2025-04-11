@@ -10,11 +10,16 @@ h1{
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: white;
+    display: flex;
+    justify-content: end;
 }
 
 p{
     font-family: 'Poppins';
     display: flex;
+    justify-content: center;
+    display: flex;
+    
     
 }
 

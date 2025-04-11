@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+
+    <h1> Exercicio 5</h1>
+    <script>
+        let num = [];
+        let i = 0;
+
+        while (num.length < 8) {
+            let entrada = prompt(`Digite o ${num.length + 1}º número (entre 100 e 200):`);
+            let valor = Number(entrada);
+
+            if (!isNaN(valor)) { //se valor é um numero válido
+                if (valor >= 100 && valor <= 200) {
+                    num.push(valor);
+                } else {
+                    alert("Valor inválido! Digite um número entre 100 e 200.");
+                }
+            } else {
+                alert("Entrada inválida! Por favor, digite um número.");
+            }
+        }
+
+        let msg = "Valores armazenados:\n";
+        for (let i = 0; i < num.length; i++) {
+            msg += `${i + 1}º número: ${num[i]}\n`;
+        }
+
+        document.writeln(msg);
+
+    </script>
+    
+</body>
+</html>
