@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+<body>
+    <h1>Exercicio 1</h1>
+
+    <script>
+        // calculadora com arrow function
+        const operacoes = {
+            soma: (a, b) => a + b,
+            subtracao: (a, b) => a - b,
+            multiplicacao: (a, b) => a * b, 
+            divisao: (a, b) => b !== 0 ? a / b : 'divisão por 0'
+
+        }; 
+        // entrada do usuario
+        let operacao = prompt("Digite a operação que deseja: soma, subtração, multiplicação, divisão: ")
+        let a = Number(prompt("Digite o primeiro numero: "))
+        let b = Number(prompt("Digite o segundo numero: "))
+
+       const calcular = operacoes[operacao];
+       const retorno = calcular ? calcular(a,b): 'operação inválida'
+
+        document.write(`O resultado da operação realizada eh ${retorno}`)
+    </script>
+    
+</body>
+</html>

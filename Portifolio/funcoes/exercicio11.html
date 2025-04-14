@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <h1>Exercicio 11</h1>
+    <script>
+        function calcularINSS(salario) {
+            let desconto = 0;
+
+            //se salario for maior que o teto, o teto é levado em consideraçao para o calculo
+            if (salario > 7786.02) {
+                salario = 7786.02; // teto
+            }
+
+            if (salario > 4000.03) {
+                desconto += (salario - 4000.03) * 0.14; //14%
+                salario = 4000.03;
+            }
+            if (salario > 2666.68) {
+                desconto += (salario - 2666.68) * 0.12; //12%
+                salario = 2666.68;
+            }
+            if (salario > 1412.00) {
+                desconto += (salario - 1412.00) * 0.09; //9%
+                salario = 1412.00;
+            }
+            if (salario > 0) {
+                desconto += salario * 0.075; //7,5%
+            }
+
+            return desconto.toFixed(2); //retorna como string duas casas decimais
+        }
+
+        const salario = parseFloat(prompt("Digite o seu salário bruto: R$"));
+
+        if (isNaN(salario) || salario <= 0) {
+            alert("Por favor, insira um valor válido.");
+        } else {
+            const desconto = calcularINSS(salario);
+            alert(`O desconto de INSS sobre o seu salário é: R$ ${desconto}`);
+        }
+</script>
+    
+</body>
+</html>

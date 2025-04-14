@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <h1>Exercicio 02</h1>
+    <script>
+        //split -> separa e divide em um array
+        //reverse -> inverte a entrada do usuário
+        // join -> junta a string de novo
+        const inverterPalavra = str => str.split('').reverse().join('');
+
+        const palavra = prompt("Digite uma palavra: ")
+        const invertido = inverterPalavra(palavra)
+        //mostrando a palavra invertida pro usuário
+        document.writeln(`A palavra digitada foi ${palavra} e o seu inverso eh ${invertido}`)
+    </script>
+    
+</body>
+</html>

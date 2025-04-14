@@ -18,13 +18,14 @@
 
     <script>
         function jogar(escolhaPessoa){
-            var palpites = ['pedra', 'papel', 'tesoura'];
+            var palpites = ['pedra', 'papel', 'tesoura']; //array com as jogadas possivies pro jogador
             var escolhaComputador = palpites[Math.floor(Math.random() * 3)];
 
             let r = '';
             if(escolhaPessoa === escolhaComputador){
                 r = "Deu empate :|";
             } else if (
+                //possibilidades no jogo dentro da aplicação
                 (escolhaPessoa === 'pedra' && escolhaComputador === 'tesoura') || 
                 (escolhaPessoa === 'papel' && escolhaComputador === 'pedra') || 
                 (escolhaPessoa === 'tesoura' && escolhaComputador === 'papel')

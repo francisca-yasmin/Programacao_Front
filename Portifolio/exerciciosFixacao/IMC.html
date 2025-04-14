@@ -15,6 +15,7 @@
         let peso = Number(prompt("Digite seu peso"))
         let altura = Number(prompt("Digite a sua altura"))
 
+        //fazendo o caulculo para retornar o IMC baseado nos inputs do usuário
         result = peso/(altura*altura)
         if (result >= 18.5 && result <= 24.4){
             document.write(`O seu IMC eh ${result}, você está com peso normal`)

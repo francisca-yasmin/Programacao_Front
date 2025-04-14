@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="exercicio9.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Bem-vindo ao meu formulário</h1>
+
+  <div class="form-container">
+    
+    <form>
+      <label>Digite o seu nome: <input type="text" id="nome"></label><br><br>
+  
+      <label>Digite o seu endereço: <input type="text" id="endereco"></label><br><br>
+  
+      <label>Qual é o seu Sexo:</label><br>
+      <input type="radio" name="sexo" id="masculino" value="Masculino"> Masculino
+      <input type="radio" name="sexo" id="feminino" value="Feminino"> Feminino <br><br>
+  
+      <label>Digite o seu Telefone: <input type="text" id="telefone"></label><br><br>
+  
+      <label>Digite o seu número de Celular: <input type="text" id="celular"></label><br><br>
+  
+      <label>Digite o seu Email (um bom): <input type="email" id="email"></label><br><br>
+  
+      <button type="button" onclick="validarFormulario()">Enviar</button> 
+    </form>
+
+  </div>
+
+
+  <script>
+    //validando os campos do formulario
+    function validarFormulario() {
+      const nome = document.getElementById("nome").value.trim(); //trim ->remove espaço em branco da string
+      const endereco = document.getElementById("endereco").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
+      const celular = document.getElementById("celular").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      const sexoM = document.getElementById("masculino").checked;
+      const sexoF = document.getElementById("feminino").checked;
+
+      //verificando se os campos foram preenchidos
+      if (nome === "") {
+        alert("Por favor, preencha o campo nome.");
+        return;
+      }
+
+      if (endereco === "") {
+        alert("Por favor, preencha o campo endereço.");
+        return;
+      }
+
+      if (!sexoM && !sexoF) {
+        alert("Por favor, selecione um sexo.");
+        return;
+      }
+
+      if (telefone === "") {
+        alert("Por favor, preencha o campo telefone.");
+        return;
+      }
+
+      if (celular === "") {
+        alert("Por favor, coloque um número de celular.");
+        return;
+      }
+
+      if (!email.includes("@") || !email.includes(".")) {
+        alert("Por favor, insira um email válido.");
+        return;
+      }
+
+      alert("O formulário foi preenchido e enviado com sucesso. Obrigada!");
+    }
+  </script>
+
+</body>
+</html>

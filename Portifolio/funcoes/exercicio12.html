@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <h1> Exercicio 12</h1>
+    <script>
+        //funcao pra calcular os juros compostos
+        let calcularJuros = (capital, taxa, meses) =>
+            capital * Math.pow((1 + taxa), tempo)
+
+        //entrada do usuario
+        let capital = Number(prompt("Digite a capital inicial: "))
+        let taxa = Number(prompt("Digite a taxa de juros: "))
+        let meses = Number(prompt("Digite os meses que você precisa: "))
+
+        let montante = calcularJuros(capital, taxa, meses)
+        let juros = montante - capital
+
+        document.write(`O valor do seu capital inicial foi ${capital.toFixed(2)}<br>`)
+        document.write(`O valor dos seus juros em cima do valor da capital inicial foi de R$${juros.toFixed(2)}`)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exericicio 05</title>
+</head>
+<body>
+    <h1>Exercicio 05</h1>
+
+    <script>
+        let num = [] //armazenar os numeros fornecidos pelo usuario
+        for(let i = 0; i < 3; i++){
+            let n = prompt("Digite um numero: ")
+            num.push(n)
+        }
+
+        //colocando em ordem crescente
+        num.sort((a, b) => a - b);
+        document.write(`os numeros em ordem crescente ficam da seguinte: ${num.join(", ")}`)
+
+    </script>
+    
+</body>
+</html>

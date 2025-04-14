@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+</head>
+<body>
+    <h1> Exercicio 07</h1>
+    <script>
+        let valor = prompt("Digite o valor em reais que você precisa: ")
+
+        let cedulas = [200, 100, 50, 20, 10, 5, 1]
+
+        // percorre o tamanho do array e verifica quantidade(qtd) de celular necessarias
+        for(let i = 0; i < cedulas.length; i++){
+            let qtd = Math.floor(valor/cedulas[i]);
+
+            //verifica se o valor eh maior que 0
+            if (qtd > 0) {
+                document.write(`${qtd} cédula(s) de R$${cedulas[i]}<br>`);
+                    dinheiro = dinheiro % cedulas[i]; //atualiza o valor restante
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

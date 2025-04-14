@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    <h1> Exercicio 13</h1>
+
+    <script>
+        //entrada do usuario
+        const valor = parseFloat(prompt("Digite o valor a ser financiado em reais: "))
+        const taxa = parseFloat(prompt("Digite a taxa de juros mensais: ")) /100;
+        const parcelas = parseInt(prompt("Digite em quantas vezes serão as parcelas: "))
+
+        //funcao para calcular o valor das parcelas
+        let calcularParcelas = (valor, taxa, parcelas) => {
+        return (valor * taxa * (1 + taxa) ** parcelas) / ((1 + taxa) ** parcelas - 1);
+        };
+        
+        let calculo_parcelas = calcularParcelas(valor, taxa, parcelas)
+
+        document.write(`As parcelas do seu financiamento ficaram no total de R$${calculo_parcelas.toFixed(2)}`)
+    
+    </script>
+    
+</body>
+</html>

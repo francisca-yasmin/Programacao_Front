@@ -30,7 +30,7 @@ function converterMaisculo(frase){
     return frase.toUpperCase();
 }
 
-//para sabr quantidade de caractere em um texto
+//para saber quantidade de caractere em um texto
 function qtdCaractere(frase){
     return frase.length;
 }
@@ -42,7 +42,7 @@ function limparEspacos(frase){
 //para fazer uma função ser executada temos que chama-la
 saudar()
 
-//chamando minha função e exeibindo o resultado na tela
+//chamando minha função e exibindo o resultado na tela
 let resultado = soma(10,20)
 document.write(resultado)
 

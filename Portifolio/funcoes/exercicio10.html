@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h1> Exercicio 10</h1>
+
+    <script>
+        //calculo do imposto de renda com base no salario minimo
+
+        let salario_min = 1518;
+        let calcularImposto = salario => {
+            if (salario <= 2112) {
+                return 0; // é isento
+            } else if (salario <= 2826.65) {
+                return salario * 0.075;
+            } else if (salario <= 3751.05) {
+                return salario * 0.15;
+            } else if (salario <= 4664.68) {
+                return salario * 0.225;
+            } else {
+                return salario * 0.275;
+            }
+        }
+
+        let qtd_salarios = Number(prompt("O seu salario equivale a quantos salarios minimos? "))
+        let total = qtd_salarios * salario_min;
+        let imposto = calcularImposto(total)
+        document.write(`O seu salário eh um total de: R$${total.toFixed(2)}<br>`);
+    </script>
+</body>
+</html>
