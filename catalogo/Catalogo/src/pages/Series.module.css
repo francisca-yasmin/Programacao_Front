@@ -2,6 +2,12 @@
 .conteiner{
     display: flex;
     justify-content: center;
+    background-color: #210B2C;
     font-family: 'Poppins';
     padding: 10px;
+}
+
+.titulo{
+    color: #210B2C;
+    font-size: 60px;
 }

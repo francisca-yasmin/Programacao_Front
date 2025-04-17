@@ -5,8 +5,8 @@ export function Header(){
     return (
         <>
         <header className={estilos.conteiner}>
-            <h1> fran's</h1>
-            <p>A melhor plataforma de Filmes pra você</p>
+            <h1 className={estilos.titulo}> Chica Flix</h1>
+            {/* <p>A melhor plataforma de Filmes pra você</p> */}
         </header>
         
         </>

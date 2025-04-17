@@ -1,7 +1,6 @@
-import estilos from './App.module.css';
-import { Navbar } from './components/Navbar';
-import { Header } from './components/header';
-import { Body } from './components/Body';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Rotas } from './Rotas/Rotas'
 
 // estrutura basica do react é atraves de funções
 function App() {
@@ -9,9 +8,11 @@ function App() {
 // qu deve ter apenas 1 componente
   return (
     <>
-     <Header/>
-     <Navbar/>
-     <Body/>
+      <BrowserRouter>
+        <Rotas/>
+      </BrowserRouter>
+
+
     </>
   )
 }

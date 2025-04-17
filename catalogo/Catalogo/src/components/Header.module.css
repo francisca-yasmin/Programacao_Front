@@ -2,24 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #AE759F;
+    background-color: #0B2545;
     height: 80px;
 }
 
-h1{
+.titulo{
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: white;
-    display: flex;
-    justify-content: end;
 }
 
 p{
     font-family: 'Poppins';
     display: flex;
     justify-content: center;
-    display: flex;
-    
-    
+    display: flex; 
 }
 

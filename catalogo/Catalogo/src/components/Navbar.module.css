@@ -1,7 +1,6 @@
 .conteiner{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     background-color: #FFFF;
     padding: 5px;
     color: black;
@@ -20,7 +19,6 @@ li{
     margin-left: 30px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     color: black;
     padding: 10px;
     gap: 2px;

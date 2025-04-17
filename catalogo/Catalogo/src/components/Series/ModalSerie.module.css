@@ -15,7 +15,7 @@
     background-color: rgb(246, 255, 248);
     padding: 20px;
     border-radius: 15px;
-    width: 60%;
+    width: 80%;
     max-width: 90%;
     max-height: 95%;
     overflow: auto;
@@ -23,7 +23,6 @@
     flex-direction: column;
     align-items: stretch;
     position: relative;
-    height: 50%;
 }
 
 .ModalHeader{
@@ -39,40 +38,37 @@
     flex-grow: 1;
 }
 
+.imgDetalhes{
+    display: flex;
+    gap: 20px;
+}
+
 .imgModal{
-    max-width: 250px;
+    width: 40%;
+    max-width: 300px;
+    height: auto;
     border-radius: 15px;
 }
 
-.imgDetails{
+.movieDetails{
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.imgDetails li{
+.movieDetails li{
     font-family: 'Poppins';
+    font-size: 80px;
 }
 
 button{
     background-color: rgb(70,70,70);
     border-radius: 50px; 
     color: aliceblue;
+    font-size: 18px;
+    width: 20px;
+    margin: 10px;
     border: none;
     cursor: pointer;
-    position: absolute;
-    top: 10px; /* Distância do topo */
-    right: 10px; /* Distância da direita */
-    padding: 5px 12px;
+    align-self: flex-end;
 }
-
-h2{
-    display: flex;
-    justify-content: center;
-    margin-left: left;
-  
-}
-
-
- 
-
-  
